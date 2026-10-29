@@ -1,8 +1,13 @@
-from hire_assistant import hire_assistant
-import random
+from test import get_average
+from plot import plot
 
-number_candidates = 10;
-candidates = [random.randint(1, 100) for _ in range(number_candidates)]
-print("candidates: ", candidates);
+number_of_tests = 1000
+input_sizes = [10, 100, 1000, 10000]##, 100000]
+average_hires = []
 
-hire_assistant(candidates);
+for input_size in input_sizes:
+    average = get_average(input_size, number_of_tests)
+    average_hires.append(average)
+    print(f"Input size: {input_size:<10} Average: {average:.3f}")
+
+plot(input_sizes, average_hires)

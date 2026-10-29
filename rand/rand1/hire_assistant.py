@@ -2,7 +2,7 @@
 def hire_assistant(candidates: list[int]):    
     if len(candidates) == 0:
         print("No candidates to choose from. Terminating...")
-        return
+        return 0
 
     total_hires = 0
     
