@@ -1,8 +1,8 @@
-from point import Point
-from disc import Disc
-from disc_from_two_points import disc_from_two_points
-from disc_from_three_points import disc_from_three_points
-from get_distance import get_distance
+from geometry.point import Point
+from geometry.disc import Disc
+from geometry.disc_from_two_points import disc_from_two_points
+from geometry.disc_from_three_points import disc_from_three_points
+from geometry.get_distance import get_distance
 
 def MiniDiscWith2Points(points: list[Point], q1: Point, q2: Point):    
     disc = disc_from_two_points(q1, q2)

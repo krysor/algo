@@ -1,7 +1,7 @@
 from math import sqrt
-from point import Point
-from disc import Disc
-from get_distance import get_distance
+from .point import Point
+from .disc import Disc
+from .get_distance import get_distance
 
 def disc_from_two_points(p1: Point, p2: Point) -> Disc:
     difference = p2 - p1
